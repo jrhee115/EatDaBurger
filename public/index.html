@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+
+    <title>Eat-Da-Burger!</title>
+</head>
+
+<body>
+    <div class="container" style="text-align: center;">
+        <div class="row">
+            <h1>Eat-Da-Burger!</h1>
+        </div>
+
+        <section id="devourSection" style="display:block;">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="card">
+                        <ul class="list-group list-group-flush" id="list1">
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-5">
+                    <div class="card">
+                        <ul class="list-group list-group-flush" id="list2">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form">
+            <div class="row">
+                <h5>Enter a burger you want to eat or track a burger you have already devoured.</h5>
+            </div>
+
+            <div class="row">
+                <form class="create-form">
+                    <div class="form-group">
+                        <label for="ca"></label>
+                        <input type="text" id="ca" name="name" />
+                    </div>
+                    <!-- </form> -->
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="devoured"></label><br />
+                    <input type="radio" name="devoured" value="0" checked /> Want to devour<br />
+                    <input type="radio" name="devoured" value="1" /> Devoured
+                </div>
+            </div>
+
+            <div class="row">
+                <button class="btn" type="submit" id="burgerSubmitBtn">Submit</button>
+            </div>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="/assets/js/burgers.js"></script>
+    </footer>
+
+</body>
+
+</html>
