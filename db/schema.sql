@@ -1,5 +1,3 @@
-use cmz46a9nv7bhne0o;
-
 drop burgers_db if exists;
 create database burgers_db;
 use burgers_db;
